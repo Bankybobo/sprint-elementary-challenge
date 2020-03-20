@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers starting from 20</title>
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+
+    <script>
+        
+        enteredNum = parseInt(window.prompt("Enter a number greater than 20"));
+        if (enteredNum < 20){
+        document.write(`Ivalid input; number must be greater than 20`);
+        }
+        document.write(`Prime numbers between 20 and ${enteredNum} is/are`);
+
+        for ( let i = 20; i <= enteredNum; i++){
+            if (isAPrime(i)) {
+                document.write(`<h1> ${i} <br></h1>`)
+            }
+
+        }
+
+        function isAPrime (num) {
+        var arr = [];
+        for ( let i = 1; i <= num; i++){
+            if (num % i == 0)
+            arr.push(i);
+        }
+
+        if (arr.length > 2)
+        return false;
+
+        else return true;
+        }
+    </script>
+    <a href="index.html">Back to index page</a>
+    
+</body>
+</html>

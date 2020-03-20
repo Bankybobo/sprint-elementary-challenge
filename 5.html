@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUM OF Numbers</title>
+    <link rel="stylesheet" href="/css/background.css">
+    
+</head>
+<body style="font-size: 200px;">
+
+    <script>
+        var initialForPlus = 0;
+        var num = parseFloat(window.prompt('Please enter a number'));
+        var userResponse = window.prompt(`Type "sum" to find the sum of consecutive numbers from 1 to ${num} or type "product" to find the rpoduct of consecutive numbers from 1 to ${num}`)
+
+        if (userResponse.toUpperCase() == 'SUM'){
+        let initial = 0;
+        for (let i = 0; i <= num; i++){
+            initial = initial + num - i;
+        }
+        document.write(`<p style="font-size: 50px;">The sum of consecutive numbers from 1 to ${num} is</p>`)
+        document.write(`<p style="font-size: 200px;">${initial}</p>`);
+        }
+
+        else if (userResponse.toUpperCase() == 'PRODUCT'){
+        var initialForProduct = 1;
+        for (let i = 1; i <= num; i++){
+            initialForProduct = initialForProduct * i;
+        }
+
+        document.write(`<p style="font-size: 50px;">The product of consecutive numbers from 1 to ${num} is</p>`)
+        document.write(`<p style="font-size: 200px;">${initialForProduct}</p>`);
+        }
+
+        else {
+        document.write(`<p style="font-size: 100px; color: "red"">invalid Operation selected!!</p>`);}
+        
+    </script>
+    <a href="index.html">Back to index page</a>
+    
+</body>
+</html>

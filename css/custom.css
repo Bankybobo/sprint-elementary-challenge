@@ -1,0 +1,48 @@
+body {
+    font-weight: bolder;
+    color: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.displayRight {
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    font-weight: bolder;
+    margin: 10px 0;
+    border: none;
+}
+
+.btn:hover {
+    margin: 10px 0;
+    background-color: white;
+    border: 5px solid goldenrod;
+    color: rgb(18, 5, 63);
+    font-weight: bolder;
+}
+
+.container {
+    background-color: rgb(18, 5, 63);
+    margin-top: 10vh;
+    height: 80vh;
+    padding-top: 40px;
+    border: 20px solid goldenrod;
+}
+
+
+
+a:hover {
+    color: rgb(1, 81, 107);
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: wheat;
+    border: 1px solid rgb(1, 81, 107);
+}
+

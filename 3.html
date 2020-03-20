@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUM OF Numbers</title>
+    <link rel="stylesheet" href="/css/background.css">
+    
+</head>
+<body style="font-size: 200px;">
+
+    <script>
+        var initial = 0;
+        var num = parseFloat(window.prompt('Please enter a number'));
+        for (let i = 0; i <= num; i++){
+            initial = initial + num - i;
+        }
+        document.write(`<p style="font-size: 50px;">Sum of consecutive numbers from 1 to ${num} is</p>`)
+        document.write(`<p style="font-size: 200px;">${initial}</p>`);
+    </script>
+    <a href="index.html">Back to index page</a>
+    
+</body>
+</html>

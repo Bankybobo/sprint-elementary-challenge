@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next 20 Leap Years</title>
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+
+    <script>
+        num = parseInt(window.prompt("Enter the number of the next leap years you would like to print"))
+        document.write(`The next ${num} leap years are: <br> <br>`)
+        let presentLeapYear = 2020
+        for( let i = 0; i < num; i++) {
+            presentLeapYear += 4;
+            document.write(presentLeapYear + '<br>' + '<br>')
+        }
+    </script>
+    <a href="index.html">Back to index page</a>
+    
+</body>
+</html>
